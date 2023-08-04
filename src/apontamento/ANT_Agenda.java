@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ant_agenda;
+package apontamento;
 
-import ant_agenda.view.LoginForm;
+import apontamento.view.LoginForm;
 
 /**
  *

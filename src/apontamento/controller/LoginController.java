@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ant_agenda.controller;
+package apontamento.controller;
 
-import ant_agenda.view.LoginForm;
-import ant_agenda.view.PrincipalForm;
+import apontamento.view.LoginForm;
+import apontamento.view.PrincipalForm;
 import javax.swing.JOptionPane;
 
 /**

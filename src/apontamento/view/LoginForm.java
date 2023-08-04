@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ant_agenda.view;
+package apontamento.view;
 
-import ant_agenda.controller.LoginController;
+import apontamento.controller.LoginController;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import javax.swing.JRootPane;
