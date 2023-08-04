@@ -11,7 +11,7 @@ import apontamento.view.LoginForm;
  *
  * @author hp
  */
-public class ANT_Agenda {
+public class App {
 
     /**
      * @param args the command line arguments

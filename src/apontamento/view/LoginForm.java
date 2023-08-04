@@ -89,7 +89,7 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ant_agenda/img/pessoas-g.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/apontamento/img/pessoas-g.png"))); // NOI18N
         jLabel3.setText(" ");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -113,8 +113,8 @@ public class LoginForm extends javax.swing.JFrame {
                                     .addComponent(jLabel2))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtSenha, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE)
+                                    .addComponent(txtSenha, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(txtLogin))
                                 .addGap(7, 7, 7))
                             .addGroup(jPanel1Layout.createSequentialGroup()
