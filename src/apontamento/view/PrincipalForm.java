@@ -17,6 +17,8 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     public PrincipalForm() {
         initComponents();
+          escondePainel();
+       pn01.setVisible(true);
     }
 
     /**
@@ -106,6 +108,7 @@ public class PrincipalForm extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
         jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel3MouseClicked(evt);
@@ -138,9 +141,16 @@ public class PrincipalForm extends javax.swing.JFrame {
         );
 
         jPanel4.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel4MouseExited(evt);
             }
         });
 
@@ -164,6 +174,15 @@ public class PrincipalForm extends javax.swing.JFrame {
         );
 
         jPanel5.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel5MouseExited(evt);
+            }
+        });
 
         jLabel3.setBackground(new java.awt.Color(255, 0, 51));
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -185,9 +204,16 @@ public class PrincipalForm extends javax.swing.JFrame {
         );
 
         jPanel6.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel6MouseExited(evt);
             }
         });
 
@@ -244,6 +270,7 @@ public class PrincipalForm extends javax.swing.JFrame {
         );
 
         jPanel9.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel9MouseClicked(evt);
@@ -712,9 +739,8 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
 //        JOptionPane.showMessageDialog(this, "Clique");
-        pn01.setVisible(true);
-        pn02.setVisible(!true);
-        pn03.setVisible(!true);
+      escondePainel();
+       pn01.setVisible(true);
     }//GEN-LAST:event_jPanel3MouseClicked
 
     private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
@@ -780,6 +806,30 @@ public class PrincipalForm extends javax.swing.JFrame {
          jPanel9.setBackground(new java.awt.Color(255,51,51));
     }//GEN-LAST:event_jPanel9MouseExited
 
+    private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
+               jPanel4.setBackground(new java.awt.Color(102, 102, 155));
+    }//GEN-LAST:event_jPanel4MouseEntered
+
+    private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
+        jPanel5.setBackground(new java.awt.Color(102, 102, 155));
+    }//GEN-LAST:event_jPanel5MouseEntered
+
+    private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
+        jPanel6.setBackground(new java.awt.Color(102, 102, 155));
+    }//GEN-LAST:event_jPanel6MouseEntered
+
+    private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
+    }//GEN-LAST:event_jPanel4MouseExited
+
+    private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
+    }//GEN-LAST:event_jPanel5MouseExited
+
+    private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
+        jPanel6.setBackground(new java.awt.Color(102, 102, 102));
+    }//GEN-LAST:event_jPanel6MouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -814,6 +864,12 @@ public class PrincipalForm extends javax.swing.JFrame {
                 new PrincipalForm().setVisible(true);
             }
         });
+    }
+    
+    public void escondePainel(){
+      pn01.setVisible(!true);
+        pn02.setVisible(!true);
+        pn03.setVisible(!true);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
