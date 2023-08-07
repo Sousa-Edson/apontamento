@@ -17,8 +17,7 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     public PrincipalForm() {
         initComponents();
-          escondePainel();
-       pn01.setVisible(true);
+        escondePainel(1);
     }
 
     /**
@@ -326,7 +325,7 @@ public class PrincipalForm extends javax.swing.JFrame {
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 260, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -566,7 +565,7 @@ public class PrincipalForm extends javax.swing.JFrame {
                     .addComponent(pnFazer1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(pn02Layout.createSequentialGroup()
                         .addComponent(jLabel15)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 322, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
                         .addComponent(jButton3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -739,8 +738,8 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
 //        JOptionPane.showMessageDialog(this, "Clique");
-      escondePainel();
-       pn01.setVisible(true);
+        escondePainel(1);
+//        pn01.setVisible(true);
     }//GEN-LAST:event_jPanel3MouseClicked
 
     private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
@@ -756,9 +755,11 @@ public class PrincipalForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel9MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
-        pn01.setVisible(!true);
-        pn02.setVisible(true);
-        pn03.setVisible(!true);
+//        pn01.setVisible(!true);
+//        pn02.setVisible(true);
+//        pn03.setVisible(!true);
+        escondePainel(2);
+
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
@@ -788,14 +789,17 @@ public class PrincipalForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel8MouseEntered
 
     private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
-        jPanel8.setBackground(new java.awt.Color(102, 102,102));
+        jPanel8.setBackground(new java.awt.Color(102, 102, 102));
     }//GEN-LAST:event_jPanel8MouseExited
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
-        pn01.setVisible(!true);
-        pn02.setVisible(!true);
-        pn03.setVisible(!true);
-        pn04.setVisible(true);
+//        pn01.setVisible(!true);
+//        pn02.setVisible(!true);
+//        pn03.setVisible(!true);
+//        pn04.setVisible(true);
+
+        escondePainel(4);
+
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jPanel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseEntered
@@ -803,11 +807,11 @@ public class PrincipalForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel9MouseEntered
 
     private void jPanel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseExited
-         jPanel9.setBackground(new java.awt.Color(255,51,51));
+        jPanel9.setBackground(new java.awt.Color(255, 51, 51));
     }//GEN-LAST:event_jPanel9MouseExited
 
     private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
-               jPanel4.setBackground(new java.awt.Color(102, 102, 155));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 155));
     }//GEN-LAST:event_jPanel4MouseEntered
 
     private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
@@ -865,11 +869,32 @@ public class PrincipalForm extends javax.swing.JFrame {
             }
         });
     }
-    
-    public void escondePainel(){
-      pn01.setVisible(!true);
+
+    public void escondePainel(int opcao) {
+        pn01.setVisible(!true);
         pn02.setVisible(!true);
         pn03.setVisible(!true);
+        pn04.setVisible(!true);
+//        int opcao = 0;
+
+        switch (opcao) {
+            case 1:
+                pn01.setVisible(true);
+                break;
+            case 2:
+                pn02.setVisible(true);
+                break;
+            case 3:
+                pn03.setVisible(true);
+                break;
+            case 4:
+                pn04.setVisible(true);
+                break;
+
+            default:
+            // code block
+        }
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
