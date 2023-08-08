@@ -14,10 +14,12 @@ import javax.swing.JOptionPane;
 public class PrincipalForm extends javax.swing.JFrame {
 
     int xx, xy;
+    int painelSelecionado = 1;
 
     public PrincipalForm() {
         initComponents();
         escondePainel(1);
+
     }
 
     /**
@@ -69,7 +71,9 @@ public class PrincipalForm extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         pn03 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
         pn04 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -131,8 +135,8 @@ public class PrincipalForm extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(83, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -164,8 +168,8 @@ public class PrincipalForm extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,8 +198,8 @@ public class PrincipalForm extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -227,8 +231,8 @@ public class PrincipalForm extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -260,8 +264,8 @@ public class PrincipalForm extends javax.swing.JFrame {
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -601,28 +605,44 @@ public class PrincipalForm extends javax.swing.JFrame {
 
         pn03.setPreferredSize(new java.awt.Dimension(902, 582));
 
+        jLabel16.setText("painel 3");
+
         javax.swing.GroupLayout pn03Layout = new javax.swing.GroupLayout(pn03);
         pn03.setLayout(pn03Layout);
         pn03Layout.setHorizontalGroup(
             pn03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 909, Short.MAX_VALUE)
+            .addGroup(pn03Layout.createSequentialGroup()
+                .addGap(382, 382, 382)
+                .addComponent(jLabel16)
+                .addContainerGap(509, Short.MAX_VALUE))
         );
         pn03Layout.setVerticalGroup(
             pn03Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 582, Short.MAX_VALUE)
+            .addGroup(pn03Layout.createSequentialGroup()
+                .addGap(229, 229, 229)
+                .addComponent(jLabel16)
+                .addContainerGap(272, Short.MAX_VALUE))
         );
 
         pn04.setPreferredSize(new java.awt.Dimension(902, 582));
+
+        jLabel18.setText("painel 4");
 
         javax.swing.GroupLayout pn04Layout = new javax.swing.GroupLayout(pn04);
         pn04.setLayout(pn04Layout);
         pn04Layout.setHorizontalGroup(
             pn04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 909, Short.MAX_VALUE)
+            .addGroup(pn04Layout.createSequentialGroup()
+                .addGap(423, 423, 423)
+                .addComponent(jLabel18)
+                .addContainerGap(442, Short.MAX_VALUE))
         );
         pn04Layout.setVerticalGroup(
             pn04Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 582, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pn04Layout.createSequentialGroup()
+                .addContainerGap(298, Short.MAX_VALUE)
+                .addComponent(jLabel18)
+                .addGap(270, 270, 270))
         );
 
         jLayeredPane1.setLayer(pn01, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -754,6 +774,7 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     private void jPanel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseExited
         jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel3MouseExited
 
     private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
@@ -772,6 +793,7 @@ public class PrincipalForm extends javax.swing.JFrame {
 //        pn01.setVisible(!true);
 //        pn02.setVisible(!true);
 //        pn03.setVisible(true);
+        escondePainel(3);
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void pnFazerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnFazerMouseClicked
@@ -796,6 +818,7 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
         jPanel8.setBackground(new java.awt.Color(102, 102, 102));
+        chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel8MouseExited
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
@@ -830,14 +853,17 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
         jPanel4.setBackground(new java.awt.Color(102, 102, 102));
+        chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel4MouseExited
 
     private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
         jPanel5.setBackground(new java.awt.Color(102, 102, 102));
+        chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel5MouseExited
 
     private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
         jPanel6.setBackground(new java.awt.Color(102, 102, 102));
+        chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel6MouseExited
 
     /**
@@ -877,6 +903,8 @@ public class PrincipalForm extends javax.swing.JFrame {
     }
 
     public void escondePainel(int opcao) {
+                chamaPainelSelecionado();
+
         pn01.setVisible(!true);
         pn02.setVisible(!true);
         pn03.setVisible(!true);
@@ -886,21 +914,44 @@ public class PrincipalForm extends javax.swing.JFrame {
         switch (opcao) {
             case 1:
                 pn01.setVisible(true);
+                painelSelecionado = 1;
                 break;
             case 2:
                 pn02.setVisible(true);
+                painelSelecionado = 2;
                 break;
             case 3:
                 pn03.setVisible(true);
+                painelSelecionado = 3;
                 break;
             case 4:
                 pn04.setVisible(true);
+                painelSelecionado = 4;
                 break;
 
             default:
             // code block
         }
+    }
 
+    public void chamaPainelSelecionado() {
+        switch (painelSelecionado) {
+            case 1:
+                jPanel3.setBackground(new java.awt.Color(102, 102, 255));
+                break;
+            case 2:
+                jPanel4.setBackground(new java.awt.Color(102, 102, 255));
+                break;
+            case 3:
+                jPanel6.setBackground(new java.awt.Color(102, 102, 255));
+                break;
+            case 4:
+                jPanel8.setBackground(new java.awt.Color(102, 102, 255));
+                break;
+
+            default:
+            // code block
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -914,7 +965,9 @@ public class PrincipalForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
