@@ -18,7 +18,7 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     public PrincipalForm() {
         initComponents();
-        escondePainel(1);
+        exibePainel(1);
 
     }
 
@@ -590,10 +590,11 @@ public class PrincipalForm extends javax.swing.JFrame {
                 .addComponent(pnFazer1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pn02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pn02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton2)
-                        .addComponent(jButton3)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
+                    .addGroup(pn02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+                        .addGroup(pn02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton2)
+                            .addComponent(jButton3)))
                     .addComponent(jLabel15))
                 .addGap(396, 396, 396))
             .addGroup(pn02Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -764,16 +765,16 @@ public class PrincipalForm extends javax.swing.JFrame {
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
 //        JOptionPane.showMessageDialog(this, "Clique");
-        escondePainel(1);
+        exibePainel(1);
 //        pn01.setVisible(true);
     }//GEN-LAST:event_jPanel3MouseClicked
 
     private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
-        jPanel3.setBackground(new java.awt.Color(102, 102, 155));
+        jPanel3.setBackground(MinhasCores.azul155());
     }//GEN-LAST:event_jPanel3MouseEntered
 
     private void jPanel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseExited
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBackground(MinhasCores.base());
         chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel3MouseExited
 
@@ -785,7 +786,7 @@ public class PrincipalForm extends javax.swing.JFrame {
 //        pn01.setVisible(!true);
 //        pn02.setVisible(true);
 //        pn03.setVisible(!true);
-        escondePainel(2);
+        exibePainel(2);
 
     }//GEN-LAST:event_jPanel4MouseClicked
 
@@ -793,7 +794,7 @@ public class PrincipalForm extends javax.swing.JFrame {
 //        pn01.setVisible(!true);
 //        pn02.setVisible(!true);
 //        pn03.setVisible(true);
-        escondePainel(3);
+        exibePainel(3);
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void pnFazerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnFazerMouseClicked
@@ -813,11 +814,11 @@ public class PrincipalForm extends javax.swing.JFrame {
     }//GEN-LAST:event_pnFazer1MouseClicked
 
     private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
-        jPanel8.setBackground(new java.awt.Color(102, 102, 155));
+        jPanel8.setBackground(MinhasCores.azul155());
     }//GEN-LAST:event_jPanel8MouseEntered
 
     private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
-        jPanel8.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel8.setBackground(MinhasCores.base());
         chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel8MouseExited
 
@@ -827,12 +828,12 @@ public class PrincipalForm extends javax.swing.JFrame {
 //        pn03.setVisible(!true);
 //        pn04.setVisible(true);
 
-        escondePainel(4);
+        exibePainel(4);
 
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jPanel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseEntered
-        jPanel9.setBackground(new java.awt.Color(102, 102, 155));
+        jPanel9.setBackground(MinhasCores.azul155());
     }//GEN-LAST:event_jPanel9MouseEntered
 
     private void jPanel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseExited
@@ -840,29 +841,29 @@ public class PrincipalForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel9MouseExited
 
     private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
-        jPanel4.setBackground(new java.awt.Color(102, 102, 155));
+        jPanel4.setBackground(MinhasCores.azul155());
     }//GEN-LAST:event_jPanel4MouseEntered
 
     private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
-        jPanel5.setBackground(new java.awt.Color(102, 102, 155));
+        jPanel5.setBackground(MinhasCores.azul155());
     }//GEN-LAST:event_jPanel5MouseEntered
 
     private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
-        jPanel6.setBackground(new java.awt.Color(102, 102, 155));
+        jPanel6.setBackground(MinhasCores.azul155());
     }//GEN-LAST:event_jPanel6MouseEntered
 
     private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
-        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel4.setBackground(MinhasCores.base());
         chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel4MouseExited
 
     private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
-        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel5.setBackground(MinhasCores.base());
         chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel5MouseExited
 
     private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
-        jPanel6.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel6.setBackground(MinhasCores.base());
         chamaPainelSelecionado();
     }//GEN-LAST:event_jPanel6MouseExited
 
@@ -902,8 +903,7 @@ public class PrincipalForm extends javax.swing.JFrame {
         });
     }
 
-    public void escondePainel(int opcao) {
-                chamaPainelSelecionado();
+    public void exibePainel(int opcao) {
 
         pn01.setVisible(!true);
         pn02.setVisible(!true);
@@ -932,21 +932,31 @@ public class PrincipalForm extends javax.swing.JFrame {
             default:
             // code block
         }
+                chamaPainelSelecionado();
+
+    }
+
+    public void limpaPainelSelecionado() {
+        jPanel3.setBackground(MinhasCores.base());
+        jPanel4.setBackground(MinhasCores.base());
+        jPanel6.setBackground(MinhasCores.base());
+        jPanel8.setBackground(MinhasCores.base());
     }
 
     public void chamaPainelSelecionado() {
+        limpaPainelSelecionado();
         switch (painelSelecionado) {
             case 1:
-                jPanel3.setBackground(new java.awt.Color(102, 102, 255));
+                jPanel3.setBackground(MinhasCores.azul255());
                 break;
             case 2:
-                jPanel4.setBackground(new java.awt.Color(102, 102, 255));
+                jPanel4.setBackground(MinhasCores.azul255());
                 break;
             case 3:
-                jPanel6.setBackground(new java.awt.Color(102, 102, 255));
+                jPanel6.setBackground(MinhasCores.azul255());
                 break;
             case 4:
-                jPanel8.setBackground(new java.awt.Color(102, 102, 255));
+                jPanel8.setBackground(MinhasCores.azul255());
                 break;
 
             default:
